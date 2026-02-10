@@ -578,6 +578,7 @@ extends:
                 displayName: Check for extraneous modified files
                 inputs:
                   targetType: inline
+                  workingDirectory: '${{ parameters.buildDirectory }}'
                   script: |
                     echo "pwd"
                     pwd
