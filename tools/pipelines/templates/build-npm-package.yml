@@ -578,12 +578,13 @@ extends:
                 displayName: Check for extraneous modified files
                 inputs:
                   targetType: inline
-                  workingDirectory: '${{ parameters.buildDirectory }}'
                   script: |
                     echo "pwd"
                     pwd
                     echo "git status"
                     git status
+                    echo "git --no-pager diff"
+                    git --no-pager diff
                     # Note: deliberately not using `set -eu -o pipefail` because this script leverages the return code of grep
                     # even in an error case
                     git status | grep -v -E 'package.json|package-lock.json|packageVersion.ts|.npmrc|build-tools/.npmrc|\(use.*' | grep '^\s' > git_status.log
