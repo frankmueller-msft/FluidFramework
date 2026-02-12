@@ -579,18 +579,18 @@ extends:
                 inputs:
                   targetType: inline
                   script: |
-                    echo "pwd"
-                    pwd
-                    echo "git status"
-                    git status
-                    echo "git --no-pager diff"
-                    git --no-pager diff
                     # Note: deliberately not using `set -eu -o pipefail` because this script leverages the return code of grep
                     # even in an error case
                     git status | grep -v -E 'package.json|package-lock.json|packageVersion.ts|.npmrc|build-tools/.npmrc|\(use.*' | grep '^\s' > git_status.log
                     if [ `cat git_status.log | wc -l` != "0" ]; then
                       cat git_status.log
                       echo "##vso[task.logissue type=error]Build should not create extraneous files"
+                      echo "pwd"
+                      pwd
+                      echo "git status"
+                      git status
+                      echo "git --no-pager diff"
+                      git --no-pager diff
                       exit -1;
                     fi
 
