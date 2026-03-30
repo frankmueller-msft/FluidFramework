@@ -368,7 +368,13 @@
 			"simple-git: overridden to ^3.32.3 to resolve a CG alert.",
 			"diff: overridden to patched versions to resolve a known ReDoS vulnerability. diff@3.x and diff@7.x have no fix in their major range so they are bumped to the nearest patched major.",
 			"serialize-javascript: overridden to ^7.0.4 to resolve GHSA-5c6j-r48x-rmvq. No 6.x fix exists; 7.x is API-compatible (only drops Node <20 support).",
-			"express: overridden to ^4.22.1 to resolve a known vulnerability in express 4.21.2."
+			"express: overridden to ^4.22.1 to resolve a known vulnerability in express 4.21.2.",
+			"lodash and lodash-es: overridden to ^4.17.23 to resolve CVE-2025-13465 (ADO #58269-58271).",
+			"yaml: overridden to patched versions to resolve CVE-2026-33532 (ADO #63409, #63432, #63433).",
+			"picomatch: overridden to patched versions to resolve CVE-2026-33672 (ADO #63428-63431).",
+			"brace-expansion: overridden to patched versions to resolve CVE-2026-33750 (ADO #63437-63439, #63443, #64313).",
+			"langsmith: overridden to ^0.5.15 to resolve CVE-2026-25528 (ADO #59585).",
+			"path-to-regexp@>=8 <9: overridden to ^8.4.0 to resolve CVE-2026-4923 (ADO #64739). The 8.x series is used by nise (sinon test library)."
 		],
 		"overrides": {
 			"@biomejs/biome": "~2.4.5",
@@ -398,7 +404,19 @@
 			"minimatch@>=9 <10": "^9.0.9",
 			"minimatch@>=10 <11": "^10.2.4",
 			"serialize-javascript@>=6 <7": "^7.0.4",
-			"express@>=4 <5": "^4.22.1"
+			"express@>=4 <5": "^4.22.1",
+			"lodash": "^4.17.23",
+			"lodash-es": "^4.17.23",
+			"yaml@>=1 <2": "^1.10.3",
+			"yaml@>=2 <3": "^2.8.3",
+			"picomatch@>=2 <3": "^2.3.2",
+			"picomatch@>=4 <5": "^4.0.4",
+			"brace-expansion@>=1 <2": "^1.1.13",
+			"brace-expansion@>=2 <3": "^2.0.3",
+			"brace-expansion@>=3 <4": "^3.0.2",
+			"brace-expansion@>=5 <6": "^5.0.5",
+			"langsmith": "^0.5.15",
+			"path-to-regexp@>=8 <9": "^8.4.0"
 		},
 		"peerDependencyComments": [
 			"The react-split-pane package used by devtools-view has a peer dependency on React 16, but it doesn't seem to be maintained and it works fine with React 18. TODO: AB#18876",
