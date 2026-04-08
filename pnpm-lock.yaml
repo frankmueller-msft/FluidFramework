@@ -60,16 +60,7 @@ overrides:
   express@>=4 <5: ^4.22.1
   picomatch@>=2 <3: ^2.3.2
   picomatch@>=4 <5: ^4.0.4
-  lodash: ^4.17.23
-  lodash-es: ^4.17.23
-  yaml@>=1 <2: ^1.10.3
-  yaml@>=2 <3: ^2.8.3
-  brace-expansion@>=1 <2: ^1.1.13
-  brace-expansion@>=2 <3: ^2.0.3
-  brace-expansion@>=3 <4: ^3.0.2
-  brace-expansion@>=5 <6: ^5.0.5
   langsmith: ^0.5.15
-  path-to-regexp@>=8 <9: ^8.4.0
 
 pnpmfileChecksum: sha256-UgK94jvekjDphs6M2itZJZ9CcCzYY0xcxZhNXJw7D28=
 
@@ -6538,7 +6529,7 @@ importers:
         specifier: ^3.2.2
         version: 3.2.6
       lodash:
-        specifier: ^4.17.23
+        specifier: ^4.17.21
         version: 4.18.1
       semver:
         specifier: ^7.7.1
@@ -6632,7 +6623,7 @@ importers:
         specifier: npm:events@^3.1.0
         version: events@3.3.0
       lodash:
-        specifier: ^4.17.23
+        specifier: ^4.17.21
         version: 4.18.1
       murmurhash3js:
         specifier: 3.0.1
@@ -6762,7 +6753,7 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       lodash:
-        specifier: ^4.17.23
+        specifier: ^4.17.21
         version: 4.18.1
       lz4js:
         specifier: ^0.2.0
@@ -6883,7 +6874,7 @@ importers:
         specifier: ^3.2.2
         version: 3.2.6
       lodash:
-        specifier: ^4.17.23
+        specifier: ^4.17.21
         version: 4.18.1
       semver:
         specifier: ^7.7.1
@@ -24478,6 +24469,9 @@ packages:
   lodash.uniqby@4.7.0:
     resolution: {integrity: sha512-e/zcLx6CSbmaEgFHCA7BnoQKyCtKMxnuWrJygbwPs/AIn+IMKl66L8/s+wBUn5LRw2pZx3bUHibiV1b6aTWIww==}
 
+  lodash@4.17.23:
+    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
+
   lodash@4.18.1:
     resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
@@ -32499,7 +32493,7 @@ snapshots:
       '@rushstack/rig-package': 0.5.3
       '@rushstack/terminal': 0.15.4(@types/node@20.19.30)
       '@rushstack/ts-command-line': 5.0.2(@types/node@20.19.30)
-      lodash: 4.18.1
+      lodash: 4.17.23
       minimatch: 10.2.4
       resolve: 1.22.11
       semver: 7.5.4
@@ -32518,7 +32512,7 @@ snapshots:
       '@rushstack/terminal': 0.19.4(@types/node@20.19.30)
       '@rushstack/ts-command-line': 5.1.4(@types/node@20.19.30)
       diff: 8.0.3
-      lodash: 4.18.1
+      lodash: 4.17.23
       minimatch: 10.2.4
       resolve: 1.22.11
       semver: 7.5.4
@@ -38955,6 +38949,8 @@ snapshots:
   lodash.truncate@4.4.2: {}
 
   lodash.uniqby@4.7.0: {}
+
+  lodash@4.17.23: {}
 
   lodash@4.18.1: {}
 

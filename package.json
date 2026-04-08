@@ -192,7 +192,7 @@
 		"type-fest": "^2.19.0",
 		"typescript": "~5.4.5"
 	},
-	"packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+	"packageManager": "pnpm@10.29.2+sha512.bef43fa759d91fd2da4b319a5a0d13ef7a45bb985a3d7342058470f9d2051a3ba8674e629672654686ef9443ad13a82da2beb9eeb3e0221c87b8154fff9d74b8",
 	"engines": {
 		"node": ">=20.19.0",
 		"pnpm": "10"
@@ -370,11 +370,7 @@
 			"express: overridden to ^4.22.1 to resolve a known vulnerability in express 4.21.2.",
 			"picomatch: overridden to patched versions to resolve a known security vulnerability.",
 			"node-forge: overridden to ^1.4.0 to resolve known security vulnerabilities.",
-			"lodash and lodash-es: overridden to ^4.17.23 to resolve a known security vulnerability.",
-			"yaml: overridden to patched versions to resolve a known security vulnerability.",
-			"brace-expansion: overridden to patched versions to resolve a known security vulnerability.",
-			"langsmith: overridden to ^0.5.15 to resolve a known security vulnerability.",
-			"path-to-regexp@>=8 <9: overridden to ^8.4.0 to resolve a known security vulnerability. The 8.x series is used by nise (sinon test library)."
+			"langsmith: overridden to ^0.5.15 to resolve a known security vulnerability. The consumer declares ^0.3.x so the override is needed to cross the minor version boundary."
 		],
 		"overrides": {
 			"@biomejs/biome": "~2.4.5",
@@ -407,16 +403,7 @@
 			"express@>=4 <5": "^4.22.1",
 			"picomatch@>=2 <3": "^2.3.2",
 			"picomatch@>=4 <5": "^4.0.4",
-			"lodash": "^4.17.23",
-			"lodash-es": "^4.17.23",
-			"yaml@>=1 <2": "^1.10.3",
-			"yaml@>=2 <3": "^2.8.3",
-			"brace-expansion@>=1 <2": "^1.1.13",
-			"brace-expansion@>=2 <3": "^2.0.3",
-			"brace-expansion@>=3 <4": "^3.0.2",
-			"brace-expansion@>=5 <6": "^5.0.5",
-			"langsmith": "^0.5.15",
-			"path-to-regexp@>=8 <9": "^8.4.0"
+			"langsmith": "^0.5.15"
 		},
 		"peerDependencyComments": [
 			"The react-split-pane package used by devtools-view has a peer dependency on React 16, but it doesn't seem to be maintained and it works fine with React 18. TODO: AB#18876",
